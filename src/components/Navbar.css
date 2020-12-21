@@ -1,0 +1,86 @@
+#iconColor{
+    color:  #ffe800;
+}
+.textCenter{
+    text-align: center;
+}
+.form-rounded {
+border-radius: 20px;
+}
+.bgColor{
+    background-color: #ffe800;
+    color:black
+}
+.navbar{
+    border-radius: 0px;
+}
+.colorBg{
+    background-color: #0071ce;
+    margin-top: -19px;
+    color: #fff;
+
+}
+.inputColor{
+    background-color:  #0071ce;;
+    border-radius: 1px solid white;
+    border:  1px solid white;
+    width: 100%;
+    outline: none;
+    color: white;
+}
+.signUpButton{
+    /* background-color:  #0071ce;; */
+    border-radius: 1px solid white;
+    border:  1px solid #0071ce;;
+    width: 80%;
+    outline: none;
+    color:#0071ce;
+}
+.singInButton{
+    background-color:  #0071ce;;
+    border-radius: 1px solid white;
+    border:  1px solid white;
+    width: 80%;
+    outline: none;
+    color: white;
+}
+.Nav-color{
+    background-color: #0071ce;
+}
+
+.btnPadding{
+    padding: 10px;
+}
+.paraGraph{
+    color: #000;
+    font-weight: 700;
+    font-size: 12px;
+}
+#footerIconColor{
+    color:#0071ce;
+    font-size: 20px;
+    margin-left: 27%;
+}
+.navbar-brand{
+    font-size: 10px;
+}
+.searchButton{
+ background-color: #ffe800;
+ width: 100%;   
+}
+.formWidth{
+    width: 300px;
+    background-color:  #f3f8fa;
+}
+#mainNavLeft{
+    margin-left: 35%;
+}
+#navTop{
+ margin-top: -20px
+}
+.anchotLeft{
+    margin-left: 10%;
+}
+.ulLeft{
+    margin-left: 20%;
+}
