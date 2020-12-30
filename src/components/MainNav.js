@@ -1,7 +1,16 @@
 import React, { Component } from 'react'
 import './Navbar.css'
 class MainNav extends Component {
+    constructor() {
+        super()
+        this.state = {
+            input: false,
+        }
 
+    }
+    handleClose = () => {
+        this.setState({ input: !this.state.input })
+    }
     render() {
         return (
             <div>
@@ -65,25 +74,30 @@ class MainNav extends Component {
                             </div>
                         </li>
                         <li class="nav-item py-3 pl-3">
-                            <div className="dropdown">
-                                <button className="btn btn-sm btn-primary  form-rounded bgColor" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="fa fa-search"></i>
-                                    PRESCRIPTIONS
-                              </button>
-                                <div className="dropdown-menu" aria-labelledby="dropdown_user">
-                                    <form className="px-4 py-2">
-                                        <input type="search" className="form-control search" placeholder="Type your drug name" autofocus="autofocus" />
-                                    </form>
-                                    <div className="menuItems">
-                                        <input type="button" className="dropdown-item" defaultValue="Drugname" />
-                                        <input type="button" className="dropdown-item" defaultValue="Drugname" />
-                                        <input type="button" className="dropdown-item" defaultValue="Drugname" />
-                                        <input type="button" className="dropdown-item" defaultValue="Drugname" />
-                                        <input type="button" className="dropdown-item"
-                                            defaultValue="Saved Medications"
-                                        />
+                            <div >
+                                {this.state.input ?
+                                    <div>
+
+
+
+                                        <input type="search" list="browsers" name="myBrowser" className='form-rounded indend' placeholder='type your drug name' style={{ width: 300, height: 35 }} />
+                                        <div id="clear" onClick={this.handleClose}>
+                                            X
+                                        </div>
+                                        <datalist id="browsers">
+                                            <option value="Drugname" />
+                                            <option value="Drugname" />
+                                            <option value="Drugname" />
+                                            <option value="Drugname" />
+                                            <option value="Save recent searches" />
+                                            <option value="Saved medications" />
+                                            <option value="Drugname" />
+                                        </datalist>
                                     </div>
-                                </div>
+                                    : <button className="btn btn-sm btn-primary  form-rounded bgColor" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onClick={this.handleClose}>
+                                        <i class="fa fa-search" ></i>
+                                    PRESCRIPTIONS
+                              </button>}
                             </div>
                         </li>
                     </ul>

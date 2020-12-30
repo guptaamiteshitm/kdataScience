@@ -84,3 +84,24 @@ border-radius: 20px;
 .ulLeft{
     margin-left: 20%;
 }
+
+#clear {
+  position: relative;
+  float: right;
+  height: 20px;
+  width: 20px;
+  top: 7px;
+  right: 25px;
+  border-radius: 20px;
+  background: #f1f1f1;
+  color:black;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+#clear:hover {
+  background: #ccc;
+}
+.indend{
+    text-indent: 10px;
+}
